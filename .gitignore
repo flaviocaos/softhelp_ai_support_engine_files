@@ -1,0 +1,30 @@
+# venv / caches
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# dados grandes / gerados
+app/static/*.mp3
+app/db/
+.cache/
+*.log
+
+# arquivos da empresa / confidenciais
+app/kb/*
+!app/kb/.gitkeep
+
+# binários/pesados (não precisam no repo)
+*.zip
+*.rar
+*.7z
+*.tar*
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tif*
+*.mp4
+*.safetensors
+*.pt
+*.onnx
