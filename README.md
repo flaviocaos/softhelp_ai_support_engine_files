@@ -11,7 +11,7 @@
 
 Sistema de suporte automatizado baseado em IA que recebe **texto, áudio e imagens** como entrada, processa-os utilizando **OCR**, **RAG** e **TTS**, e responde em **texto** e **áudio**, sem depender de chaves de API externas.
 
-## 🚀 Tecnologias e Bibliotecas Utilizadas
+##  Tecnologias e Bibliotecas Utilizadas
 
 - **FastAPI** – Framework para API em Python
 - **Tesseract OCR** – Extração de texto de imagens
@@ -25,7 +25,7 @@ Sistema de suporte automatizado baseado em IA que recebe **texto, áudio e image
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 app/
@@ -43,7 +43,7 @@ README.md                  # Este arquivo
 
 ---
 
-## 📦 Requisitos
+##  Requisitos
 
 - **Python** 3.11
 - **pip** atualizado
@@ -53,11 +53,11 @@ README.md                  # Este arquivo
   - macOS: `brew install tesseract`
 - **(Opcional)** FFmpeg (necessário se utilizar o endpoint `/support/audio` com Whisper)
 
-> 💡 No Windows, o caminho para o executável do Tesseract já está definido em `app/ocr.py`.
+>  No Windows, o caminho para o executável do Tesseract já está definido em `app/ocr.py`.
 
 ---
 
-## 📚 Base de Conhecimento Obrigatória
+##  Base de Conhecimento Obrigatória
 
 Colocar os seguintes arquivos na pasta `app/kb/`:
 
@@ -70,7 +70,7 @@ Colocar os seguintes arquivos na pasta `app/kb/`:
 
 ---
 
-## ⚙️ Instalação e Execução Local
+##  Instalação e Execução Local
 
 1. **Criar ambiente virtual**
    ```bash
@@ -100,7 +100,7 @@ Colocar os seguintes arquivos na pasta `app/kb/`:
 
 ---
 
-## 🌐 Endpoints Principais
+##  Endpoints Principais
 
 - **Health check**:  
   `GET http://127.0.0.1:8000/health`
@@ -112,7 +112,7 @@ Colocar os seguintes arquivos na pasta `app/kb/`:
 
 ---
 
-## 🧪 Exemplos de Teste
+##  Exemplos de Teste
 
 ### Texto + Imagem
 ```bash
@@ -141,7 +141,7 @@ curl -X POST "http://127.0.0.1:8000/support/audio"   -F "audio=@tests/pergunta.m
 
 ---
 
-## 🐳 Execução via Docker
+##  Execução via Docker
 
 1. **Build da imagem**
    ```bash
@@ -155,7 +155,7 @@ curl -X POST "http://127.0.0.1:8000/support/audio"   -F "audio=@tests/pergunta.m
 
 ---
 
-## 🛠 Troubleshooting
+##  Troubleshooting
 
 | Problema | Possível Solução |
 |----------|-----------------|
@@ -165,7 +165,7 @@ curl -X POST "http://127.0.0.1:8000/support/audio"   -F "audio=@tests/pergunta.m
 
 ---
 
-## 📌 Observações para Avaliação
+##  Observações para Avaliação
 
 - Todas as dependências estão listadas em `requirements.txt`
 - Testado em **Windows 11** e **Ubuntu 22.04**
